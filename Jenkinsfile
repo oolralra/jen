@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''
         sudo docker build -t oolralra/myweb:1.3 .
-        sudo docker login -u $DOCKER_ID -p $DOCKER_PASS        
+        sudo docker login -u $DOCKER_ID -p $DOCKER_PASS --password-stdin
         sudo docker push oolralra/myweb:1.3
 
         '''
