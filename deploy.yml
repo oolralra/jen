@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-webserver
-        image: oolralra/myweb:1.1
+        image: oolralra/ipnginx
         ports:
         - containerPort: 80
 ---
